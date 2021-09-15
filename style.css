@@ -1,0 +1,128 @@
+html {
+    zoom: 125%;
+}
+
+.logo_name {
+    width: 60%;
+}
+
+.form,
+.image_list {
+    display: list-item;
+    justify-content: center;
+    text-align: center;
+}
+
+.game_image {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    height: auto;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.user_tools {
+    zoom: 167%;
+}
+
+.middle_content {
+    list-style-type: none;
+}
+
+.playicon {
+    image-rendering: optimizeSpeed;
+    /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox                        */
+    image-rendering: -o-crisp-edges;
+    /* Opera                          */
+    image-rendering: -webkit-optimize-contrast;
+    /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;
+    /* Chrome */
+    image-rendering: optimize-contrast;
+    /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE8+                           */
+
+}
+
+.playicon,
+.footer_icon {
+    vertical-align: middle;
+    max-width: 20px;
+    fill: white;
+    color: white;
+    margin-right: 1px;
+}
+
+.link_group {
+    margin-right: 1%;
+}
+
+body {
+    /* background-color: #3d4344 */
+    background-image: url('./images/background.png');
+}
+
+.user_page {
+    color: #ffffff;
+    font-size: 120%;
+    font-family: Lato, Lato, LatoExtended, sans-serif
+}
+
+.user_page hr {
+    background-color: #1dacb5
+}
+
+.user_page .user_links {
+    fill: #ffffff
+}
+
+
+.user_page_wrap {
+    background-color: #00000085;
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+}
+
+.user_page a,
+.footer a {
+    color: #49dcdd
+}
+
+.user_page .game_column,
+.user_page .purchased_games,
+.user_page .collection_row {
+    border-color: #1dacb5
+}
+
+.footer {
+    border-color: #1dacb5;
+
+}
+
+.game_grid_widget .game_cell .game_thumb,
+.game_grid_widget .game_cell .gif_overlay {
+    border-radius: 0px
+}
+
+.game_grid_widget .game_cell .game_title a.title {
+    color: #49dcdd
+}
+
+.game_grid_widget .game_cell .web_flag {
+    color: #ffffff;
+    background: #1dacb5
+}
+
+.game_grid_widget .game_cell .game_text,
+.game_grid_widget .game_cell .game_author {
+    color: rgba(255, 255, 255, 0.75)
+}
+
+.game_grid_widget .game_cell .game_platform,
+.game_grid_widget .game_cell .game_genre {
+    color: rgba(255, 255, 255, 0.5)
+}
