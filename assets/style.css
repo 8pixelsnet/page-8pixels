@@ -2,6 +2,31 @@ html {
     zoom: 125%;
 }
 
+@font-face {
+    font-family: pixelFont;
+    src: url("./mania.ttf");
+}
+
+.action_btn,
+body {
+    font-size: 90%;
+    font-family: pixelFont !important;
+}
+
+
+.user_tools {
+    zoom: 220%;
+    /* margin-bottom: 20px;
+    bottom: 0 !important;
+    top: auto !important; */
+}
+
+@media (max-width : 420px) {
+    .user_tools {
+        zoom: 120%;
+    }
+}
+
 .logo_name {
     width: 60%;
 }
@@ -21,13 +46,6 @@ html {
     margin-bottom: 20px;
     height: auto;
     border: 1px solid rgb(255, 255, 255);
-}
-
-.user_tools {
-    zoom: 167%;
-    margin-bottom: 20px;
-    bottom: 0 !important;
-    top: auto !important;
 }
 
 .middle_content {
@@ -67,13 +85,12 @@ html {
 
 body {
     /* background-color: #3d4344 */
-    background-image: url('./images/background.png');
+    background-image: url('../images/background.png');
 }
 
 .user_page {
     color: #ffffff;
     font-size: 120%;
-    font-family: Lato, Lato, LatoExtended, sans-serif
 }
 
 .user_page hr {
