@@ -13,14 +13,24 @@ async function getDictionary() {
     return dictionary
 }
 
-async function loadLanguage() {
-    var dictionary = await getDictionary()
+async function loadLanguage(dictionary) {
     var elements = Array.from(document.getElementsByTagName("text"));
     elements.forEach(element => {
-        console.log(element.getAttribute("key"))
         var content = dictionary[element.getAttribute("key")]
         element.textContent = content
     })
 }
 
-loadLanguage()
+async function checkBrowser(dictionary) {
+    if (document.createElement("detect").style.zoom !== "") {
+        swal(dictionary["incompatible_browser"]);
+    }
+}
+
+async function main() {
+    var dictionary = await getDictionary()
+    loadLanguage(dictionary)
+    checkBrowser(dictionary)
+}
+
+main()

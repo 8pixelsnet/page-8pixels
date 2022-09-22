@@ -14,7 +14,7 @@ body {
 }
 
 
-.user_tools {
+.play_button {
     zoom: 220%;
     /* margin-bottom: 20px;
     bottom: 0 !important;
@@ -22,8 +22,9 @@ body {
 }
 
 @media (max-width : 420px) {
-    .user_tools {
+    .play_button {
         zoom: 120%;
+
     }
 }
 

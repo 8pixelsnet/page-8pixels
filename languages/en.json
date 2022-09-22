@@ -1,4 +1,5 @@
 {
+    "incompatible_browser": "Your browser doesn't support CSS' \"Zoom\" property, we recommend using a Chromium-based browser, like Brave or Chrome. \n\nMore details in https://developer.mozilla.org/en-US/docs/Web/CSS/zoom#browser_compatibility",
     "hello": "Hello, dear player!",
     "welcome": "Welcome to 8pixels' website, we are a new indie Brazilian team, developing games since before 2020.",
     "main_games": "Today, our main games are",
