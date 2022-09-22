@@ -1,5 +1,5 @@
 html {
-    zoom: 125%;
+    zoom: 135%;
 }
 
 @font-face {
@@ -85,7 +85,7 @@ body {
 
 body {
     /* background-color: #3d4344 */
-    background-image: url('../images/background.png');
+    background-image: url('./images/background.png');
 }
 
 .user_page {
