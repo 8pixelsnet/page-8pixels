@@ -1,5 +1,5 @@
 {
-    "incompatible_browser": "Seu navegador não suporta a propriedade \"Zoom\" do CSS, nós recomendamos usar um navegador baseado no Chromium, como Brave ou Chrome. \n\nDetalhes em https://developer.mozilla.org/en-US/docs/Web/CSS/zoom#browser_compatibility",
+    "incompatible_browser": "Seu navegador não suporta a propriedade Zoom do CSS, para melhor experiência recomendamos usar um navegador baseado no Chromium, como Brave ou Chrome. \n\nMais detalhes em https://developer.mozilla.org/en-US/docs/Web/CSS/zoom#browser_compatibility",
     "hello": "Olá, jogador!",
     "welcome": "Bem-vindo ao site da 8pixels, somos uma equipe indie aqui do Brasil, que desenvolve jogos desde antes de 2020.",
     "main_games": "Hoje, nossos principais jogos são",

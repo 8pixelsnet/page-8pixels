@@ -3,12 +3,16 @@ async function loadJson(url) {
     return await response.json()
 }
 
-async function getDictionary() {
-    var userLang = navigator.language || navigator.userLanguage;
-    userLang = userLang.split("-")[0]
+function getLanguage() {
+    var language = navigator.language || navigator.userLanguage;
+    language = language.split("-")[0]
+    return language
+}
+
+async function getDictionary(userLanguage) {
     var dictionary = await loadJson("languages/en.json")
     try {
-        dictionary = await loadJson("languages/" + userLang + ".json")
+        dictionary = await loadJson("languages/" + userLanguage + ".json")
     } catch { }
     return dictionary
 }
@@ -28,9 +32,18 @@ async function checkBrowser(dictionary) {
 }
 
 async function main() {
-    var dictionary = await getDictionary()
+    var userLanguage = getLanguage()
+
+    var dictionary = await getDictionary(userLanguage)
     loadLanguage(dictionary)
     checkBrowser(dictionary)
+
+    if (userLanguage == 'pt') {
+        var elements = Array.from(document.getElementsByClassName("just_portuguese"))
+        elements.forEach(element => {
+            element.hidden = false
+        })
+    }
 }
 
 main()

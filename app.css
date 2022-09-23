@@ -21,6 +21,10 @@ body {
     top: auto !important; */
 }
 
+#video_intro {
+    max-width: 90%;
+}
+
 @media (max-width : 420px) {
     .play_button {
         zoom: 120%;
@@ -33,6 +37,7 @@ body {
 }
 
 .form,
+.youtube_intro,
 .image_list {
     display: list-item;
     justify-content: center;
