@@ -1,153 +1,71 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>8Pixels</title>
-
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-  <link rel="icon" href="./images/icon.png">
-  <link rel="stylesheet" href="external_assets/user.css" />
-  <link rel="stylesheet" href="./app.css" />
-  <script src="external_assets/sweetalert.min.js"></script>
-  <script src="app.js"></script>
-  <script src="external_assets/lib.js"></script>
-  <script src="external_assets/bundle.min.js"></script>
-  <script src="external_assets/user.min.js"></script>
-
-  <script>
-    function openTab(url) {
-      const link = document.createElement('a');
-      link.href = url;
-      link.target = '_blank';
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-    }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8Pixels — Dungeons &amp; Roots and more</title>
+  <meta name="description" content="8Pixels is an indie game team from Brazil. Dungeons &amp; Roots, a multiplayer survival game, is coming to Steam. Play our other games free on itch.io.">
+  <meta property="og:title" content="8Pixels — Dungeons &amp; Roots">
+  <meta property="og:description" content="Online multiplayer survival in a 2D-pixel-art 3D world. Coming to Steam.">
+  <meta property="og:image" content="https://8pixels.net/images/games/dungeons.png">
+  <link rel="icon" href="/images/icon.png">
+  <link rel="stylesheet" href="/app.css">
 </head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="/images/name.png" alt="8Pixels — from players to players!">
+      <p class="intro">Indie game team from Brazil. Making games since before 2020.</p>
+    </header>
 
-<body data-page_name="user" class="locale_en responsive no_theme_toggle">
-  <ul class="play_button user_tools hidden">
-    <li><a target="_blank" href="https://itchio.8pixels.net/" class="action_btn">
-        <img class="playicon" src="./images/joystick.png">
-        Play now
-      </a></li>
-  </ul>
-  <div class="user_page_wrap">
-    <div class="user_page page_widget mode_column">
-      <div id="profile_header" class="header">
-        <div class="image_header"><img class="profile_banner" /></div>
-        <div class="inner_column text_header">
-        </div>
+    <section class="hero" id="dungeons">
+      <h1>Dungeons &amp; Roots</h1>
+      <p>Online multiplayer survival. A 3D world drawn in 2D pixel art, seen in first person. Fight hordes, level up, evolve your build, and explore the dungeon solo or with friends. Survivor-like combat, roguelike runs.</p>
+      <div class="video" onclick="this.innerHTML='<iframe src=https://www.youtube-nocookie.com/embed/Buk0H0fiHrM?autoplay=1&start=29 allow=&quot;autoplay; fullscreen; picture-in-picture&quot;></iframe>'"><img src="/images/games/dungeons.png" alt="Dungeons &amp; Roots gameplay"><span class="play">&#9654;</span></div>
+      <div class="cta">
+        <a class="btn big" href="https://dungeons.8pixels.net/" target="_blank" rel="noopener"><img src="/images/joystick.png" alt="">Play the demo</a>
+        <span class="badge"><b>Coming to Steam</b><small>published by <a href="https://store.steampowered.com/developer/DeadPixel/" target="_blank" rel="noopener">DeadPixel Studios</a></small></span>
       </div>
-      <div class="inner_column">
-        <div class="middle_content">
-          <div class="image_list">
-            <img class="logo_name" src="./images/name.png">
-          </div>
-          <p>
-            <text key="hello"></text>
-            <br>
-            <br>
-            <text key="welcome"></text>
-            <br>
-          <div class="youtube_intro">
-            <iframe class="just_portuguese" id="video_intro" width="560" height="315"
-              src="https://www.youtube.com/embed/NFD6oMihBuA" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen hidden></iframe>
-          </div>
-          <br class="just_portuguese" hidden>
-          <text key="main_games"></text>
-          <b><a target="_blank" href="https://gomaze.8pixels.net">Gomaze</a></b>,
-          <text key="gomaze"></text>
-          </p>
-          <div onclick="openTab('https://gomaze.8pixels.net')" class="image_list">
-            <img class="game_image" src="./images/gomaze1.jpg">
-            <img class="game_image" src="./images/gomaze2.jpg">
-            <img class="game_image" src="./images/gomaze3.jpg">
-            <img class="game_image" src="./images/gomaze4.jpg">
-          </div>
+      <h2>Notify me when it&#39;s on Steam</h2>
+      <p class="tag">One email when the Steam page is live, one when the game is out. Nothing else.</p>
+      <form class="notify" action="https://docs.google.com/forms/d/e/1FAIpQLSfCIpFhbxq9OP1W5p60IkG22NpoOy6QUsw509WeDIPerttaQw/formResponse" method="POST" target="notify_sink"block\"},300)">
+        <input type="email" name="entry.1949073876" placeholder="your@email.com" required autocomplete="email">
+        <button class="btn" type="submit">Notify me</button>
+      </form>
+            <iframe name="notify_sink" hidden></iframe>
+      <p class="follow">Want more news? Follow us on <a href="https://instagram.8pixels.net" target="_blank" rel="noopener"><img src="/images/instagram.svg" alt="">Instagram</a></p>
+    </section>
 
-          <p>...</p>
-
-          <p>
-            <text key="and"></text>
-            <b><a target="_blank" href="https://vivald.8pixels.net">Vivald Runner</a></b>,
-            <text key="vivald"></text>
-          </p>
-
-
-          <div onclick="openTab('https://vivald.8pixels.net')" class="image_list">
-            <img class="game_image" src="./images/vivald1.jpg">
-            <img class="game_image" src="./images/vivald2.jpg">
-            <img class="game_image" src="./images/vivald3.jpg">
-            <img class="game_image" src="./images/vivald4.jpg">
-          </div>
-
-
-          <p>
-            <a target="_blank" href="https://play.8pixels.net">
-              <text key="our_games"></text>
-            </a>
-          </p>
-
-          <p>...</p>
-
-          <!-- <div class="form">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfzJ2uvMEIwLHrNIkWZ2mGsUeBufm_RW99PdqrwoWZLDHSqNA/viewform?embedded=true"
-              width="100%" height="470px" frameborder="0" marginheight="0" marginwidth="0"><text
-                key="our_games"></text></iframe>
-
-          </div> -->
-          <p></p>
-          <p>
-            <text key="feedback1"></text>
-            <!-- <a target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf8Ir6wCRrEAfhvgeLi1RXwQzuGbS7mt95bVgsaPYlVB9DxHw/viewform?usp=sf_link">
-              <text key="feedback2"></text></a> -->
-            <text key="feedback3"></text>
-            <a target="_blank" href="mailto:8pixels.net@gmail.com">8pixels.net@gmail.com</a>!
-          </p>
-        </div>
-        <p>...</p>
-
+    <section id="games">
+      <h2>Our other games</h2>
+      <p class="tag">All free. Most run in the browser.</p>
+      <div class="grid">
+        <a class="card" href="https://monolith.8pixels.net" target="_blank" rel="noopener"><img src="/images/games/monolith.png" alt="Monolith"><div><b>Monolith</b><small>3D runner with a different look every level. Browser and mobile.</small></div></a>
+        <a class="card" href="https://bluedash.8pixels.net" target="_blank" rel="noopener"><img src="/images/games/bluedash.png" alt="Blue Dash"><div><b>Blue Dash</b><small>Polished platform adventure. Bring your crew and dash 'em all. PC.</small></div></a>
+        <a class="card" href="https://gomaze.8pixels.net" target="_blank" rel="noopener"><img src="/images/games/gomaze.png" alt="Gomaze"><div><b>Gomaze</b><small>Puzzle mazes full of dangerous robots. Mobile and browser.</small></div></a>
+        <a class="card" href="https://vivald.8pixels.net" target="_blank" rel="noopener"><img src="/images/games/vivald.png" alt="Vivald Runner"><div><b>Vivald Runner</b><small>Change the seasons while running through the city.</small></div></a>
       </div>
-    </div>
+      <p style="margin-bottom:0"><a class="btn alt" href="https://8pixels.itch.io" target="_blank" rel="noopener">All games on itch.io</a></p>
+    </section>
 
-    <div class="footer">
-      <div class="footer_inner">
-        <div class="user_links">
-          <span class="link_group for_nil">
-            <svg version="1.1" width="21" height="18" role="img" aria-hidden viewBox="0 0 262.728 235.452"
-              class="footer_icon">
-              <path
-                d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z" />
-            </svg>
-            <a target="_blank" href="https://itch.io/profile/8pixels" rel="me">8pixels</a>
-          </span>
-          <span class="link_group for_nil">
-            <img class="footer_icon" src="./images/instagram.svg"></img>
-            <a target="_blank" href="https://instagram.8pixels.net" rel="nofollow me">@8pixelsofficial</a>
-          </span>
-          <!--           
-          <span class="link_group for_nil">
-            <img class="footer_icon" src="images/twitter.svg"></img>
-            <a href="https://twitter.com/8PixelsOfficial" rel="me">@8pixelsofficial</a>
-          </span>
-           -->
-          <span class="link_group for_nil">
-            <img class="footer_icon" src="./images/youtube.svg"></img>
-            <a target="_blank" href="https://youtube.8pixels.net" rel="me">8pixels</a>
-          </span>
-        </div>
-      </div>
-    </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Press, playtests, collabs, or just feedback: <a href="mailto:8pixels.net@gmail.com">8pixels.net@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <a href="https://8pixels.itch.io" target="_blank" rel="noopener">itch.io</a>
+      <a href="https://www.youtube.com/channel/UC4Ixkb5o4RilVmyxrnyIOnA" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://instagram.8pixels.net" target="_blank" rel="noopener">Instagram</a>
+      <div>© 8Pixels</div>
+    </footer>
   </div>
-  <script type="text/javascript">new I.UserLayout(document.body);</script>
+<div class="toast" id="toast">Thanks! We will email you when Dungeons &amp; Roots is on Steam.</div>
+<script>
+document.querySelector('.notify').addEventListener('submit', function () {
+  var form = this, toast = document.getElementById('toast');
+  setTimeout(function () { form.reset(); toast.classList.add('show'); setTimeout(function () { toast.classList.remove('show'); }, 5000); }, 300);
+});
+</script>
 </body>
-
 </html>
