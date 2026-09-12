@@ -64,6 +64,7 @@
 <script>
 document.querySelector('.notify').addEventListener('submit', function () {
   var form = this, toast = document.getElementById('toast');
+  if (document.activeElement) document.activeElement.blur();
   setTimeout(function () { form.reset(); toast.classList.add('show'); setTimeout(function () { toast.classList.remove('show'); }, 5000); }, 300);
 });
 </script>
